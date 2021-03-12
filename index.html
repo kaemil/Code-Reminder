@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Reminder</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <header>
+        <h1>Code Reminder</h1>
+    </header>
+    <div class="container">
+        <div class="container__topinfo">
+            <h1>Signup for our newsletter</h1>
+            <p>Get the latest information about your code to your inbox</p>
+        </div>
+        <hr class="container__line container__line--top">
+        <form action="#" method="GET">
+            <fieldset>
+                <legend>Contact information</legend>
+                <div class="form__contact">
+                    <label class="form__contact--label" for="name">Name</label>
+                    <input class="form__contact--input" type="text" name="name" id="name" required
+                        placeholder="required">
+                </div>
+                <div class="form__contact">
+                    <label class="form__contact--label" for="email">Email Address</label>
+                    <input class="form__contact--input" type="email" name="email" id="email" required
+                        placeholder="required">
+                </div>
+                <div class="form__contact">
+                    <label class="form__contact--label" for="phone">Phone Number</label>
+                    <input class="form__contact--input" type="tel" name="phone" id="phone" placeholder="123-456-789 ">
+                </div>
+                <div class="form__contact">
+                    <label class="form__contact--label" for="city">City</label>
+                    <input class="form__contact--input" type="text" name="city" id="city" placeholder="optional">
+                </div>
+                <div class="form__contact">
+                    <label class="form__contact--label" for="region">Region</label>
+                    <select class="form__contact--input" name="region" id="region">
+                        <option value="none">Select a region</option>
+                        <option value="dol">Dolnośląskie</option>
+                        <option value="kuj">Kujawsko-pomorskie</option>
+                        <option value="lube">Lubelskie</option>
+                        <option value="lubu">Lubuskie</option>
+                        <option value="lodz">Łódzkie</option>
+                        <option value="mal">Małopolskie</option>
+                        <option value="maz">Mazowieckie</option>
+                        <option value="opo">Opolskie</option>
+                        <option value="podk">Podkarpackie</option>
+                        <option value="podl">Podlaskie</option>
+                        <option value="pom">Pomorskie</option>
+                        <option value="sla">Śląskie</option>
+                        <option value="swi">Świętokrzyskie</option>
+                        <option value="war">Warmińsko-mazurskie</option>
+                        <option value="wiel">Wielkopolskie</option>
+                        <option value="zach">Zachodniopomorskie</option>
+                    </select>
+                </div>
+                <div class="form__contact">
+                    <label class="form__contact--label" for="code">Zip Code</label>
+                    <input class="form__contact--input" type="text" name="code" id="code" placeholder="optional">
+                </div>
+            </fieldset>
+            <hr class="container__line container__line--bottom">
+
+            <fieldset>
+                <legend>Newsletter</legend>
+                <p>Select the newsletters you would like to get</p>
+                <input class="form__news--input" type="checkbox" name="lang" value="html" id="htmln">
+                <label class="form__news--label" for="htmln">HTML News</label>
+                <br>
+                <input class="form__news--input" type="checkbox" name="lang" value="css" id="cssn">
+                <label class="form__news--label" for="cssn">CSS News</label>
+                <p>Newsletter Format</p>
+                <input class="form__news--input" type="radio" name="format" value="html" id="htmlf">
+                <label class="form__news--label" for="htmlf">HTML</label>
+                <br>
+                <input class="form__news--input" type="radio" name="format" value="txt" id="txt">
+                <label class="form__news--label" for="txt">TXT Format</label>
+                <p>Other topics you'd like to hear about:</p>
+                <div class="form__news">
+                    <textarea class="form__textarea"></textarea>
+                </div>
+                <br>
+                <input class="form__news--button" type="submit" value="Sign up">
+            </fieldset>
+        </form>
+    </div>
+    <footer>Copyright The Code Review</footer>
+</body>
+
+</html>

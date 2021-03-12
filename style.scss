@@ -1,0 +1,269 @@
+/* Header colors */
+$bg-color: #111725;
+$header-color: #afafaf;
+$header-bg-color: #394055;
+/* Container colors */
+$h1-color:#5BE1B0;
+$p-color: #afafaf;
+$hr-color: #5BE1B0;
+/* Form colors */
+$legend-color:#afafaf;
+$contact_label-color:#afafaf;
+$contact_input-color: #111725;
+$input_border-color:#696969;
+$input-bg:#afafaf;
+$input_active-bg: #d2eee4;
+$placeholder-color:#696969;
+$label_news-color: #afafaf;
+/* Button colors */
+$button-color:#111725;
+$button-border: #4da082;
+$button_active-bg: #4da082;
+$button-bg:#5BE1B0;
+/* Footer colors */
+$footer-color:#afafaf;
+
+body {
+    background-color: $bg-color;
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Header */
+
+header h1 {
+    font-size: 300%;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 40px 0;
+    text-align: center;
+    color: $header-color;
+    background-color: $header-bg-color;
+}
+
+p {
+    color: $p-color;
+    margin: 0;
+    font-size: 1.1em;
+}
+
+h1 {
+    color: $h1-color;
+    font-size: 200%;
+    margin: 0;
+    padding-bottom: 30px;
+    text-transform: capitalize;
+}
+
+/* Container */
+
+.container {
+    margin: auto;
+}
+
+.container {
+    &__topinfo {
+        text-align: center;
+        padding: 50px 0 40px 0;
+
+    }
+
+    &__line {
+
+        border-left: none;
+        border-right: none;
+        margin: 0;
+    }
+
+    &__line--top {
+        border-top-color: $hr-color;
+        border-bottom-color: $hr-color;
+        border-width: 4px 0 2px 0;
+        height: 4px;
+    }
+
+    &__line--bottom {
+        border-top-width: 4px;
+        border-top-color: $hr-color;
+        border-bottom: none;
+    }
+}
+
+/* Contact information */
+
+fieldset {
+    margin: 20px 0;
+    padding: 30px;
+    border: none;
+}
+
+legend {
+    color: $legend-color;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+form {
+    width: 100%;
+}
+
+.form {
+    &__contact {
+        display: flex;
+        margin: 0;
+        flex-direction: column;
+        padding: 10px 0;
+
+    }
+
+    &__contact--label {
+        height: 40px;
+        align-items: center;
+        display: flex;
+        font-size: 120%;
+        padding: 10px 0;
+        margin-right: 20px;
+        color: $contact_label-color;
+
+    }
+
+    &__contact--input {
+        flex-grow: 1;
+        outline: none;
+        font-size: 120%;
+        padding: 10px 15px;
+        color: $contact_input-color;
+        background-color: $input-bg;
+        border: 3px solid $input_border-color;
+    }
+
+    &__contact--input:hover {
+        background-color: $input_active-bg;
+    }
+
+    &__contact--input:focus {
+        background-color: $input_active-bg;
+    }
+}
+
+::-webkit-input-placeholder {
+    color: $placeholder-color;
+}
+
+:-ms-input-placeholder {
+    color: $placeholder-color;
+}
+
+::-moz-placeholder {
+    color: $placeholder-color;
+}
+
+/* Newsletter */
+
+fieldset p {
+    padding: 15px 0;
+}
+
+.form {
+    &__news {
+        display: flex;
+    }
+
+    &__news--label {
+        display: inline-block;
+        padding: 10px 0;
+        color: $label_news-color;
+    }
+
+    &__news--input {
+        width: 15px;
+        height: 15px;
+    }
+
+    &__news--label:hover {
+        display: inline-block;
+        padding: 10px 0;
+        cursor: pointer;
+    }
+
+    &__news--input:focus {
+        width: 15px;
+        height: 15px;
+        cursor: pointer;
+    }
+
+    &__textarea {
+        resize: vertical;
+        flex-grow: 1;
+        height: 150px;
+        font-size: 1.5em;
+        outline: none;
+        background-color: $input-bg;
+        border: 3px solid $input_border-color;
+    }
+
+    &__textarea:hover {
+        background-color: $input_active-bg;
+    }
+
+    &__textarea:focus {
+        background-color: $input_active-bg;
+    }
+
+    &__news--button {
+        border: 3px solid $button-border;
+        color: $button-color;
+        background-color: $button-bg;
+        outline: none;
+        margin: 15px 0;
+        width: 100%;
+        padding: 15px 0;
+        font-size: 1.2em;
+        letter-spacing: 0.1em;
+        font-weight: bold;
+    }
+
+    &__news--button:hover {
+        background-color: $button_active-bg;
+        cursor: pointer;
+    }
+
+    &__news--button:focus {
+        background-color: $button_active-bg;
+        cursor: pointer;
+    }
+}
+
+/* Footer */
+
+footer {
+    font-style: italic;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 0 0 30px 0;
+    color: $footer-color;
+}
+
+/* RWD */
+
+@media(min-width: 768px) {
+    .container {
+        max-width: 1000px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form {
+        &__contact {
+            flex-direction: row;
+        }
+
+        &__contact--label {
+            flex: 1;
+        }
+
+        &__contact--input {
+            flex: 3;
+        }
+    }
+}
