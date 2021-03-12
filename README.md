@@ -1,8 +1,7 @@
 # Code Reminder
 
 **Description:**
-Simple RWD information newsletter.
-
+Simple RWD information form.
 **Why:**
 This project was created to practice flexbox layout module.
 
