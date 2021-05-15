@@ -12,3 +12,6 @@ This project was created to practice flexbox layout module and HTML form tags.
 - SCSS
 - BEM methodology
 
+**Link**
+
+https://kaemil.github.io/Code-Reminder/
